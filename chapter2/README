@@ -1,0 +1,52 @@
+2.1: Ok so bubble sort is fairly important algorithm.
+http://www.smbc-comics.com/?id=1989
+
+A random number generator is not necesary but it's nice.
+See ex2.2/main.cpp for an implementation of this.
+
+Follow the instructions and please please please remember
+to add in comments to let me know you've done all the 
+steps
+
+2.2: Function Overloading
+Also very useful. 
+Remember that the min(int[],int) the first argument is an 
+array with the length specified in the second argument 
+moving the other functions over often leads people to compare
+the elements of int[] with int
+
+2.4: Urgh I hated this exercise but It's very useful.
+
+We prevent against multiple inclusion by using #ifndef and 
+#define as described in the lecture notes.
+
+to compile into objects
+g++ -c min.cc
+g++ -c max.cc
+
+that produces min.o max.o
+
+now we archive these into libMinMax.a
+
+ar q libMinMax.a min.o max.o
+
+use library. Using my mac the linking didn't look in the 
+current directory so I needed either
+g++ test.cc libMinMax.a #produces executable a.out 
+
+or 
+g++ -o test test.cc libMinMax.a #also works
+
+or 
+#with the -L. telling gcc to search in the current directory 
+g++ -o test test.cc -lMinMax -L. 
+
+
+by the by I also check that typeid(x)=typeid(y) as an
+extension of the last exercises...
+
+don't forget to use myLib::min to call the library versions
+and check min(a,b) to make sure the built in function also
+works.
+
+2.5: nice and easy. just remember to print out nicely
