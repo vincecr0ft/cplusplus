@@ -1,8 +1,6 @@
 Perhaps I am showing my age here but I learned to code in fortran. 
 Fortran sucks at graphics and at handling strings. 
 Fortran and C are very similar. C strings are horrible. 
-If you need to modify strings in your code use C++ strings!
-Or just use Python! Python is fun!
 
 Anyway for chapter2 I will write a proper README
 
